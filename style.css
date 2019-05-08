@@ -1,0 +1,551 @@
+/* ############### Body ############### */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+
+/* ############### Header ############### */
+
+header {
+  color: white;
+  text-shadow: black 1px 1px 2px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  border: 2px solid hsla(360, 100%, 100%, 0);
+  line-height: 0;
+  margin: 1vw;
+}
+
+nav li:hover {
+  border: 2px solid white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 2vw;
+  display: inline-block;
+}
+
+/* ############### Hero ############### */
+
+#hero {
+  text-align: center;
+  height: 100vh;
+  background-image: url(./images/beach2.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+#hero h1 {
+  margin-top: 0;
+  padding-top: 25vh;
+  color: white;
+  text-shadow: black 2px 2px 4px;
+  font-size: 5rem;
+}
+
+
+/* ############### Profile ############### */
+
+#profile {
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  padding: 2vw;
+}
+
+#profile_blurb {
+  flex-basis: 30%;
+  min-width: 300px;
+  text-align: justify;
+}
+
+#profile_pic_container {
+  flex-basis: 30%;
+}
+
+#profile_picture {
+  min-width: 20vw;
+  min-height: 20vw;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px black;
+  display: inline-block;
+  background-image: url(./images/profile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#about_me {
+  flex-basis: 30%;
+  min-width: 300px;
+}
+
+#about_me p {
+  margin-top: 1.5vw;
+  text-align: justify;
+}
+
+.special {
+  background-color: white;
+  color: darkslategrey;
+  font-style: italic;
+  padding: 3px 5px;
+}
+
+#profile h3 {
+  font-size: 2rem;
+  margin-top: 1vw;
+}
+
+#profile h4 {
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#profile hr {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 70%;
+}
+
+
+/* ############### Portfolio ############### */
+
+#portfolio {
+  width: 100vw;
+  display: inline-block;
+  background: #F4F4F9;
+  text-align: center;
+}
+
+#portfolio_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.card {
+  width: 60vw;
+  display: flex;
+  margin: 6vh;
+}
+
+.card p {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse .card_text {
+  margin-right: 2vw;
+  margin-left: 0vw;
+  text-align: right;
+}
+
+.card_img {
+  flex-basis: 60%;
+}
+
+.responsive_img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px grey;
+  opacity: 0.95;
+}
+
+.responsive_img:hover {
+  box-shadow: 0px 0px 10px grey;
+  opacity: 1;
+}
+
+.card_text {
+  flex-basis: 40%;
+  text-align: justify;
+  margin-left: 2vw;
+}
+
+.card_text h3 {
+  margin: 0;
+  color: #2368b5;
+}
+
+.card_text h4 {
+  color: #9b603d;
+  margin-top: 0px;
+}
+
+.card_text hr {
+  border: 2px solid #7C9885;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill_button {
+  margin: 0.2vw;
+  background-color: #2368b5;
+  color: white;
+  padding: 5px 15px 4px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  font-size: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#portfolio h2 {
+  margin-bottom: 0;
+}
+
+#portfolio a {
+  color: #2368b5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#portfolio a:visited {
+  color: #9b603d;
+}
+
+#portfolio a:hover {
+  text-decoration: underline;
+  color: #2368b5;
+}
+
+/* ############### Contact ############### */
+
+#contact {
+  min-height: 70vh;
+  padding: 0 4vw;
+  background: darkslategrey;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#email_button {
+  font-size: 1.4rem;
+  padding: 15px 35px;
+  border-radius: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 1px 1px 4px black;
+  background-color: #2368b5;
+  color: white;
+}
+
+#email_button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#contact_icons i {
+  font-size: 3.5rem;
+  margin: 1vw;
+  color: #203636;
+}
+
+#contact_icons i:hover {
+  color: white;
+}
+
+#contact h3, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+#contact h2 {
+  margin-bottom: 0;
+}
+
+
+/* ############### Footer ############### */
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background: #203636;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+/* ############### CV ############### */
+
+#cv_header {
+  background-color: darkslategrey;
+}
+
+#cv_container {
+  height: 100%;
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(45deg, lightgrey 41.67%, #dfecec 41.67%, #dfecec 50%, lightgrey 50%, lightgrey 91.67%, #dfecec 91.67%, #dfecec 100%);
+  background-size: 8.49px 8.49px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+#cv_container h1 {
+  font-size: 3em;
+  margin: 1vw 0 1vw 0;
+  font-family: 'Merriweather', serif;
+}
+
+#cv {
+  margin: 2vw 0vw;
+  border: solid 1px grey;
+  max-width: 70vw;
+  background: #F4F4F9;
+  padding: 3vw;
+}
+
+#cv_top h3 {
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: 'Merriweather', serif;
+}
+
+#cv_top p {
+  font-size: 0.8em;
+  width: 80%;
+  display: inline-block;
+}
+
+#cv_blurb {
+  margin-top: 2vw;
+  font-style: italic;
+}
+
+#cv_icons {
+  margin: 1vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#cv_icons i {
+  font-size: 2.5rem;
+  padding: 0 2vw;
+  color: #203636;
+}
+
+#cv_icons i:hover {
+  font-size: 2.5rem;
+  color: #2368b5;
+}
+
+.cv_box {
+  display: flex;
+  margin: 1vw;
+  padding: 1vw 0vw;
+}
+
+.left, .left h3 {
+  text-align: right;
+  flex-basis: 30%;
+  font-family: 'Merriweather', serif;
+}
+
+.left h3 {
+  color: #2368b5;
+  margin: 0 0 1em 0;
+}
+
+.left h4 {
+  color: #9b603d;
+  margin: 0;
+}
+
+.left h6 {
+  margin-top: 1em;
+}
+
+.left hr {
+  border: 2px solid #7C9885;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+.right {
+  text-align: left;
+  flex-basis: 70%;
+}
+
+.right ul {
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: left;
+  flex-basis: 70%;
+}
+
+.right li {
+  margin: 0 0 1.2em 0;
+}
+
+.cv_break {
+  font-family: 'Merriweather', serif;
+}
+
+.cv_rule {
+  border-top: 1px solid grey;
+  width: 100%;
+}
+
+
+/* ############### Media Queries ############### */
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    padding-top: 2vw;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    margin: 0 5vw;
+  }
+
+  nav li {
+    padding: 2vw 0;
+  }
+
+  #profile {
+    flex-direction: column;
+    padding: 5vw;
+  }
+
+  #profile_pic_container {
+    order: -1;
+  }
+
+  #profile_picture {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 3vw;
+  }
+
+  #profile_blurb {
+    margin-top: 12vw;
+    margin-bottom: 12vw;
+  }
+
+  .card {
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .reverse .card_text {
+    flex-direction: column;
+    text-align: center;
+    margin: 0vw;
+  }
+
+  .card_text {
+    margin: 0vw;
+    text-align: center;
+  }
+
+  .responsive_img {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1vw;
+  }
+
+  .skills {
+    text-align: right;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reverse .skills {
+    flex-direction: row-reverse;
+  }
+
+  .skill_button {
+    font-size: 0.8rem;
+  }
+
+  #contact_icons i {
+    margin: 2vw;
+    font-size: 2rem;
+  }
+
+  #cv {
+    max-width: 85vw;
+  }
+
+  #cv_icons i {
+    margin: 2vw;
+    font-size: 2rem;
+  }
+
+  #cv_icons i:hover {
+    font-size: 2rem;
+  }
+
+  .cv_box {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    padding: 1vw 0vw;
+  }
+
+}
