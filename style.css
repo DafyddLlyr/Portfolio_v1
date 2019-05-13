@@ -523,6 +523,10 @@ footer p {
     font-size: 0.8rem;
   }
 
+  #contact {
+    min-height: 100vh;
+  }
+
   #contact_icons i {
     margin: 2vw;
     font-size: 2rem;
