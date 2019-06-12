@@ -172,6 +172,12 @@ nav a {
   text-align: justify;
 }
 
+.card ul {
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 2vw;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
