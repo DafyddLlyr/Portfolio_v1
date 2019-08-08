@@ -433,6 +433,12 @@ footer p {
   flex-basis: 70%;
 }
 
+.right p {
+  margin: 0 0 1.2em 0;
+  font-size: 0.8rem;
+  padding-left: 2vw;
+}
+
 .right ul {
   font-size: 0.8rem;
   margin: 0;
