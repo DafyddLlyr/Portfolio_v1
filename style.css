@@ -147,7 +147,6 @@ nav a {
 /* ############### Portfolio ############### */
 
 #portfolio {
-  width: 100vw;
   display: inline-block;
   background: #F4F4F9;
   text-align: center;
@@ -322,7 +321,6 @@ nav a {
 /* ############### Footer ############### */
 
 footer {
-  width: 100vw;
   height: 5vh;
   background: #203636;
   color: white;
